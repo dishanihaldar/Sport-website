@@ -1,0 +1,712 @@
+/*
+greyish blue #2F3744;
+grey writing #646464;
+background grey #f7f7f7;
+
+text color #656B6F;
+*/
+
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    background: white;
+}
+
+/*Nav bar ------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*heading circle thing witht the image and the linear gradient over it -----------------------------------------------------*/
+.header{
+    margin-top: 0.1%;
+    height: 90vh;
+    background-image: url(../pics/header.jpeg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 15%;
+    left: 30px;
+}
+
+.logo{
+    height: 60px;;
+    opacity: 0.8;
+}
+
+.heading{
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+/*the heading write up thing----------------------------------------------------------------------------------------*/
+
+.heading-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation-name: movetodown;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.heading-sub{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 33.5px;
+
+    animation-name: movetoup;
+    animation-duration: 1.0s;
+}
+
+@keyframes movetodown{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes movetoup{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+
+/*The adnimation button "take a tour thing ---------------------------------------------------------------------------"*/
+
+.btnp:link{
+    border: none;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btnp-white{
+    background-color: #ffffff;
+    color: #646464;
+}
+
+.btnp:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0.2);
+    color: black;
+}
+
+.btnp:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0.2);
+}
+
+
+/*intro thing rewrite css*/
+
+
+
+.cardedit{
+    margin-top: 10%;
+    
+    background: white;
+    box-shadow: none;
+    transition: all .2s;
+    }
+
+
+
+.container{
+    margin-top: 5%;
+}
+
+.midintro{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*display: inline-block;*/       /*on purpose*/
+    
+    color: red;
+    
+}
+
+
+.tertiary{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    color: #656B6F;
+}
+
+.paragraph{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #656B6F;
+}
+
+.coli{
+    position: relative;
+    
+}
+
+
+.onei{
+    
+    left: 0;
+    box-shadow: 0 1.5rem 4rem rgb(black, .4);
+    border-radius: .2px;
+    position: absolute;
+    width: 55%;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 0.5rem;
+}
+
+.twoi{
+    top: 3.5rem;
+    right: 0;
+
+    box-shadow: 0 1.5rem 4rem rgb(black, .4);
+    border-radius: .2px;
+    position: absolute;
+    width: 55%;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 0.5rem;
+}
+
+.threei{
+    top: 7rem;
+    left: 20%;
+
+    box-shadow: 0 1.5rem 4rem rgb(black, .4);
+    border-radius: .2px;
+    position: absolute;
+    width: 55%;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 0.5rem;
+}
+
+.onei:hover{
+    transform: scale(1.1);
+    z-index: 20;
+    outline: 0.5rem solid rgb(255, 34, 34);
+}
+
+.twoi:hover{
+    transform: scale(1.1);
+    z-index: 20;
+    outline: 0.5rem solid rgb(34, 253, 34);
+}
+
+.threei:hover{
+    transform: scale(1.1);
+    z-index: 20;
+    outline: 0.5rem solid rgb(34, 34, 255) ;
+}
+
+/*Gaming Pads*/
+
+.gamepads{
+    margin-top: 7%;
+    /*background-image: linear-gradient(rgba(104, 230, 0, 0.385), rgba(255, 166, 0, 0.485)), url(../pics/itro.jpg);*/
+    background-image:linear-gradient(to right bottom, rgba(51, 173, 255, 0.39), rgba(81, 17, 255, 0.753)), url(../pics/intro1.jpeg);
+    opacity: 1;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-size: cover;
+    height: 70rem;
+    width: 100%;
+    transition: all 1s;
+    color:black;
+}
+
+.pades{
+    margin-top: 7%;
+}
+
+.card-container{
+    -webkit-perspective: 500px;
+    perspective: 500px;
+}
+
+.cards-container{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+ }
+
+.card-container:hover .card{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card{
+    transition: transform  0.7s;
+    transform-style: preserve-3d;
+    border: none;
+    padding: none;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.cardi{
+    height: 20rem;
+    width: 80%;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+
+.btn-space{
+    margin-top: 20%;
+    border-radius: 12   px;
+}
+
+.btn{
+    
+}
+
+
+/*Description  ----------------------------------------------------------------------------------------------*/
+
+.descrip{
+    
+    border: black;
+    box-shadow: 0 4px 20px 2px rgba(0,0,0,0.2);
+}
+
+.quotes{
+    font-weight: 600;
+    font-size: 145%;
+    text-align: center;
+}
+
+.quotes2{
+    font-weight: 600;
+    font-size: 175%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.edit1{
+    margin-top: -5%;
+}
+
+.edit2{
+    margin-top: -3%;
+}
+
+/* subscrip ------------------------------------------------------------------------------------------------ */
+
+
+.gamepades{
+    margin-top: 7%;
+    /*background-image: linear-gradient(rgba(104, 230, 0, 0.385), rgba(255, 166, 0, 0.485)), url(../pics/itro.jpg);*/
+    background-image:linear-gradient(to right bottom, rgba(51, 173, 255, 0.432), rgb(81, 17, 255));
+    opacity: 1;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    transition: all 1s;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*the search button with maps integration ----------------------------------------------------------------------------------
+
+.searchbtn{
+    width: 10%;
+    height: 7vh;
+    border: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: all .2s;
+    font-size: 15px;
+          }
+
+.searchbar{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    width: 85%;
+    margin-left: 3%;
+    padding: 5px 5px;; 
+    outline: none;
+    height: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #302e2e;
+    padding: 5px;
+    font-size: 13px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.searchbtn:hover{
+
+        /*transform: translateY(-3px);
+        box-shadow: 0 1px 3px rgba(0,0,0.2);*/ /*for some reason let it be in comment*/
+      /*  border: 1px solid blue;
+        background-color: rgba(0, 0, 255, 0.425);
+        color: #ffffff;
+        
+}
+
+.searchbtn:active{
+    /*transform: translateY(-1px);*/   /*same goes for this*/
+    /*
+    box-shadow: 0 5px 10px rgba(0,0,0.2);
+}
+
+/*flex box images --------------------------------------------------------------------------------------
+
+.flex{
+    height: 300px;
+    width: 450px;
+    margin: 5px;
+    transition: all .5s;
+}
+
+.flex:hover{
+    transform: scale(1.1);
+}
+
+.flexc{
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-left: 5%;*/ /*same here*/
+
+/*
+    margin-top: 2%;
+    justify-content: center;
+}*/
+
+/*Sign up box -----------------------------------------------------------------
+
+.login-box{
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 2px 4px;
+}
+
+.left-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 300px;
+    height: 400px;
+}
+
+.t{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.s{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.right-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(cyan, yellow, lightgreen);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.or{
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.signinwith{
+     display: block;
+     margin-bottom: 40px;
+     font-size: 28px;
+     color: #ffffff;
+     text-align: center;
+     text-shadow: 0 2px 4px;
+}
+
+button.social{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer; 
+}
+
+.facebook{
+    background: #32508e;
+}
+
+.Twitter{
+    background: #55acee;
+}
+
+.Gmail{
+    background: #dd4b39;
+}
+
+/*Intro ---------------------------------------------------------------------------------------------------------------
+
+.section{
+    background-color: #f7f7f7;
+    padding: 25rem 0;
+    margin-top: -30vh;
+}
+
+.headSection{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-image:linear-gradient(to right bottom, rgba(47, 55, 68, 0.719), #301557d5);
+    display: inline-block;
+    color: transparent;
+    letter-spacing: .2rem;
+    -webkit-background-clip: text;
+}
+
+.headSection:hover{
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+.centers{
+    text-align: center;
+}
+
+.marginbottom{
+    margin-bottom: 5rem;
+}
+
+.sectionrow{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+.sectioncol1{
+    width: calc((100%) / 2);
+    margin: 0 6vh;
+    background-color: #55acee;
+    padding: 5px 0px; 
+}
+
+.tertiary{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    
+}
+
+.paragraph{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.flexone{
+    height: auto;
+    width: auto;
+    top: -2rem;
+    left: 0;
+
+    transition: all .5s;
+}
+
+.flexSecond:hover{
+    transform: scale(1.1);
+    
+}
+
+.fletwo{
+    height: auto;
+    width: auto;
+    top: 2rem;
+    left: right;
+    position: absolute;
+    
+    transition: all .5s;
+}
+
+
+
+.three{
+    top: -2rem;
+    left: 0;
+}
+
+/*sports intro box -----------------------------------------------------------------------------------------------------
+
+.sports{
+    background-image: url(../pics/intro.jpg);
+    height: 500px;
+    width: 100%;
+    opacity: 0.6;
+    transition: all .2s;
+    
+}
+
+.sports:hover{
+    opacity: 0.1;
+}
+
+/*.header:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 2000ms;
+}*/
